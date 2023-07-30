@@ -20,8 +20,8 @@
             <p>
                 Here is your new file. <br>
                 Please let me know if you take this file. <br>
-                <!-- {{ file type3 }} : 수정해야 할 최소 문장 수 -->
-                ✓ Please remind that for this file, <b style="color:red">you need to modify at least {{ file type3 }} sentences</b>.
+                <!-- {{ file_type3 }} : 수정해야 할 최소 문장 수 -->
+                ✓ Please remind that for this file, <b style="color:red">you need to modify at least {{ file_type3 }} sentences</b>.
                 </p>
                 
                 <!-- 가이드라인 작성 -->
@@ -32,17 +32,17 @@
                         <li>
                         Details on the Task <br>
                         Job description: MTPE(Machine Translation Post Editing) <br>
-                        Language pair: {{ language pair }} <br>
+                        Language pair: {{ lang_pair }} <br>
                         Source/Delivery file format: MS Excel(.xlsx) <br>
                         Volume: {{ volume }} {{ token }}s (based on the source sentences) <br>
-                        Unit price: ${{ unit price }} / {{ token }} (based on source sentences)<br>
+                        Unit price: ${{ unit_price }} / {{ token }} (based on source sentences)<br>
                         <mark><b>Deadline: {{ deadline }} 10:00 a.m. (KST)</b></mark>
                         </li> <br>
                         
                         <!-- 2.correction rate -->
                         <li>
-                        <!-- {{ file type1 }} : 총 문장 수 / {{ file type2 }} : 최소 수정률 / {{ file type3 }} : 수정해야 할 최소 문장 수 -->
-                        Out of the {{ file type1 }} Sentences/Words etc, you need to <u><b style="color:red">modify at least {{ file type2 }}</b></u>, which amounts to <mark><b>a minimum of {{ file type3 }} Sentences/Words</b></mark> etc. <br>
+                        <!-- {{ file_type1 }} : 총 문장 수 / {{ file_type2 }} : 최소 수정률 / {{ file_type3 }} : 수정해야 할 최소 문장 수 -->
+                        Out of the {{ file_type1 }} Sentences/Words etc, you need to <u><b style="color:red">modify at least {{ file_type2 }}</b></u>, which amounts to <mark><b>a minimum of {{ file_type3 }} Sentences/Words</b></mark> etc. <br>
                         This task requires to be translated into <u><b>one translation</b> per source text</u>. <br>
                         *Task type: MTPE <br>
                         In the column for the first translation (Column D), Machine-Translated sentences are provided. <br>
@@ -88,7 +88,7 @@
                 
                 <p>
                 I kindly request your prompt response regarding your intention to proceed with the task. <br>
-                If you don't <b>reply by {{ reply deadline }} 10:00 a.m. (KST)</b>, the assignment may be allocated to another worker. <br>
+                If you don't <b>reply by {{ reply_deadline }} 10:00 a.m. (KST)</b>, the assignment may be allocated to another worker. <br>
                 In this case, please understand that the payment will not be made even if the completed task is submitted.
                 </p>
                 
