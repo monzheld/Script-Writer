@@ -16,7 +16,7 @@
 
          <br><br><br><br><br><br><br><br>
 
-        <form method="GET", action="{{url_for('write_script')}}">
+        <form method="post", action="{{url_for('write_script')}}">
            <b style="font-family: 'Nanum Gothic', sans-serif;"> 
             File Type :  </b> 
                          <input type="radio", name='file_type', value="TS">TS 
@@ -24,7 +24,7 @@
                          <br><br>
             <b style="font-family: 'Nanum Gothic', sans-serif;"> 
             Language pair : </b>
-            <select id='lang_pair'>
+            <select name='lang_pair'>
                 <option value="de_DE-en_GB">de_DE-en_GB</option>
                 <option value="en_US-ar_AE">en_US-ar_AE</option>
                 <option value="en_US-ko_KR">en_US-ko_KR</option>
@@ -56,15 +56,15 @@
                     <input type="text", name='unit_price', placeholder="0.01"> <br><br>
             <b style="font-family: 'Nanum Gothic', sans-serif;"> 
             Deadline (작업 마감 기한을 선택하세요) : </b>
-                    <input type="date", id='deadline'> <br><br>
+                    <input type="date", name='deadline'> <br><br>
             <b style="font-family: 'Nanum Gothic', sans-serif;"> 
             Reply Deadline (작업 의사 답장 기한을 선택하세요) : </b>
-                    <input type="date", id='reply_deadline'> <br><br>
+                    <input type="date", name='reply_deadline'> <br><br>
             <b style="font-family: 'Nanum Gothic', sans-serif;"> 
             담당 PM (영문 이름을 입력하세요) : </b>
                     <input type="text", name='pm', placeholder="Gildong Hong"> <br><br>
             <br><br><br><br><br>
-            <input style="font-family: 'Nanum Gothic', sans-serif;", type="submit" , value='스크립트 작성하기'>
+            <input style="font-family: 'Nanum Gothic', sans-serif;", type="submit", value='스크립트 작성하기'>
         </form>
 
         
