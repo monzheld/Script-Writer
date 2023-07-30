@@ -1,1 +1,1 @@
-web: gunicorn --workers=1 rentpredict_app:app
+web: gunicorn --workers=1 script_app:app
