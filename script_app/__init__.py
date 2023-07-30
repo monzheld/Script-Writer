@@ -31,9 +31,9 @@ def write_script():
     pm = request.args.get("pm")
 
     return render_template('result.html', 
-                           file_type, file_type1, file_type2, file_type3, 
-                           lang_pair, token, volume, unit_price, 
-                           deadline, reply_deadline, pm
+                           file_type=file_type, file_type1=file_type1, file_type2=file_type2, file_type3=file_type3, 
+                           lang_pair=lang_pair, token=token, volume=volume, unit_price=unit_price, 
+                           deadline=deadline, reply_deadline=reply_deadline, pm=pm
                             )
 
 
