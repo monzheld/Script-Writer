@@ -1,0 +1,114 @@
+<html>
+    <head> 
+        <title>Script Writer</title> 
+        <meta charset="utf-8"> 
+    </head>
+
+    <body bgcolor=#FFFFFF>
+
+    <center>
+    <br><br><br><br><br>
+    아래의 스크립트를 복사하시면 됩니다! 
+    </center>
+
+    <br><br><br><br><br><br><br> 
+
+        <div>
+
+            <p>
+                Here is your new file. <br>
+                Please let me know if you take this file. <br>
+                <!-- {{ file type3 }} : 수정해야 할 최소 문장 수 -->
+                ✓ Please remind that for this file, <b style="color:red">you need to modify at least {{ file type3 }} sentences</b>.
+                </p>
+                
+                <!-- 가이드라인 작성 -->
+                <p>
+                <!-- 1번부터 시작하는 리스트 -->
+                <ol start="1">
+                        <!-- 1.Details on the Task -->
+                        <li>
+                        Details on the Task <br>
+                        Job description: MTPE(Machine Translation Post Editing) <br>
+                        Language pair: {{ language pair }} <br>
+                        Source/Delivery file format: MS Excel(.xlsx) <br>
+                        Volume: {{ volume }} {{ token }}s (based on the source sentences) <br>
+                        Unit price: ${{ unit price }} / {{ token }} (based on source sentences)<br>
+                        <mark><b>Deadline: {{ deadline }} 10:00 a.m. (KST)</b></mark>
+                        </li> <br>
+                        
+                        <!-- 2.correction rate -->
+                        <li>
+                        <!-- {{ file type1 }} : 총 문장 수 / {{ file type2 }} : 최소 수정률 / {{ file type3 }} : 수정해야 할 최소 문장 수 -->
+                        Out of the {{ file type1 }} Sentences/Words etc, you need to <u><b style="color:red">modify at least {{ file type2 }}</b></u>, which amounts to <mark><b>a minimum of {{ file type3 }} Sentences/Words</b></mark> etc. <br>
+                        This task requires to be translated into <u><b>one translation</b> per source text</u>. <br>
+                        *Task type: MTPE <br>
+                        In the column for the first translation (Column D), Machine-Translated sentences are provided. <br>
+                        Please modify, edit, correct, or change the provided MT to be correct in meaning. <br>
+                        <br>
+                        ✓ Please correct it <u>directly in <b>column D</b></u>. (Do not edit column E and F.) <br>
+                        Column E (Edited): When modifying a given machine translation, "N" is converted to "Y", and the cell turns green. <br>
+                        Column F (mt_sim): If the translation you wrote after modification is the same as the translation provided by the above-mentioned machine translator, the cell turns red as "P" is converted to "F". <br>
+                        <br>
+                        The purpose is not to correct mistranslations but to collect alternative versions of translations different from machine translations. <br>
+                        Therefore, please make maximum use of synonyms, related terms, and similar expressions when making the modifications.
+                        </li> <br>
+                        
+                        <!-- 3.Task Guideline -->
+                        <li>
+                        Task Guideline <br>
+                        Please make sure to read the guideline(attached link) thoroughly before starting the task. <br>
+                        <!-- 가이드라인 하이퍼링크 (새창으로 띄우기) -->
+                        <a href="https://docs.google.com/document/d/1O3WMKPRvCekUhaQnRITergtIZ6rDLnYKombnzlVGa64/edit#heading=h.188tncyttyu3" 
+                    target="_blank">https://docs.google.com/document/d/1O3WMKPRvCekUhaQnRITergtIZ6rDLnYKombnzlVGa64/edit#heading=h.188tncyttyu3</a> <br>
+                        This guideline will be updated from time to time and your inquiries will be answered in the very last page. <br>
+                        We can request re-checking if the guidelines are not followed. So, please be aware of the guideline.
+                        </li> <br>
+                        
+                        <!-- 4.Payment -->
+                        <li>
+                        Payment <br>
+                        The payment will be conducted on the 12th of the following month from the time the internal quality check is completed. <br>
+                        (However, if the 12th is Saturday, it will be paid on the 11th, and if it is Sunday, it will be paid on the 13th.) <br>
+                        If the submitted file does not meet Flitto’s quality standards, we can request a revision. <br>
+                        If you fail to comply with our request of revision, the payment will not be made as it is not up to par. <br>
+                        Please kindly note that we will proceed with an internal quality check once the whole work process of a file is done. If you give up in the middle, the payment will not be made.
+                        </li> <br>   
+                </ol>
+                </p>
+                
+                
+                <p>
+                ※ If the correction rate does not meet the criteria, there may be a file revision request. <br>
+                ※ Please make sure to work on the excel file given. And please do not modify the file name. Please understand that all sheets are protected except for cells necessary for work due to internal needs. <br>
+                ※ Please note that if you submit the file quickly, we can also assign an extra file to you as soon as we collect it.
+                </p>
+                
+                <p>
+                I kindly request your prompt response regarding your intention to proceed with the task. <br>
+                If you don't <b>reply by {{ reply deadline }} 10:00 a.m. (KST)</b>, the assignment may be allocated to another worker. <br>
+                In this case, please understand that the payment will not be made even if the completed task is submitted.
+                </p>
+                
+                <p>
+                If you have any questions, please let me know.
+                </p>
+                
+                <p>
+                Sincerely, <br>
+                {{ pm }}
+                </p>
+        
+        
+        </div>
+    
+        <br><br><br><br><br>
+    
+    <center>
+    <a href='/'>다시 작성하기</a>
+    </center>
+
+
+    </body>
+
+</html> 
