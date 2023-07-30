@@ -16,7 +16,7 @@
 
          <br><br><br><br><br><br><br><br>
 
-        <form method="post", action="{{url_for('write_script')}}">
+        <form method="GET", action="{{url_for('write_script')}}">
            <b style="font-family: 'Nanum Gothic', sans-serif;"> 
             File Type :  </b> 
                          <input type="radio", name='file_type', value="TS">TS 
@@ -55,11 +55,11 @@
             Unit price (숫자를 입력하세요) : </b>
                     <input type="text", name='unit_price', placeholder="0.01"> <br><br>
             <b style="font-family: 'Nanum Gothic', sans-serif;"> 
-            Deadline (작업 마감 기한을 선택하세요) : </b>
-                    <input type="date", name='deadline'> <br><br>
+            Deadline (작업 마감 기한을 입력하세요) : </b>
+                    <input type="text", name='deadline', placeholder="yyyy/mm/dd"> <br><br>
             <b style="font-family: 'Nanum Gothic', sans-serif;"> 
-            Reply Deadline (작업 의사 답장 기한을 선택하세요) : </b>
-                    <input type="date", name='reply_deadline'> <br><br>
+            Reply Deadline (작업 의사 답장 기한을 입력하세요) : </b>
+                    <input type="text", name='reply_deadline', placeholder="yyyy/mm/dd"> <br><br>
             <b style="font-family: 'Nanum Gothic', sans-serif;"> 
             담당 PM (영문 이름을 입력하세요) : </b>
                     <input type="text", name='pm', placeholder="Gildong Hong"> <br><br>
