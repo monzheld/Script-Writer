@@ -7,8 +7,8 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-# result page
-@app.route('/result', methods=['GET'])
+# script page
+@app.route('/script', methods=['GET'])
 def write_script():
     # input 값 받아오기 
     file_type = request.args.get("file_type") 
