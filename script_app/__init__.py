@@ -8,7 +8,7 @@ def index():
     return render_template('index.html')
 
 # script page
-@app.route('/script', methods=['GET'])
+@app.route('/script', methods=['GET', 'POST'])
 def write_script():
     # input 값 받아오기 
     file_type = request.args.get("file_type") 
